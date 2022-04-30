@@ -1,0 +1,24 @@
+form{
+    margin: auto;
+    width: 25%;
+  padding: 20px;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* text-align: center;
+    margin: 24px 0 12px 0; */
+}
+
+input{
+    display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+h1,
+h2{
+    text-align: center;
+}
+

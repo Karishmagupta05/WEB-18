@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="signup.css">
+    
+</head>
+<body>
+   
+    <h1>LOGIN PAGE</h1>
+    <form>
+        <label><b>Email id</b></label>
+        <input id="email" placeholder="Enter email" type="text">
+        <label><b>Password</b></label>
+        <input id="password" placeholder=" Enter password" >
+        <input type="submit" value="submit">
+    </form>
+    
+</body>
+</html>
+
+<script>
+    
+    var form=document.querySelector("form")
+
+    var userData=JSON.parse(localStorage.getItem("userData"))
+
+    form.addEventListener("submit",function(event){
+        event.preventDefault()
+
+        
+var data={
+    email:form.email.value,
+    password:form.password.value,
+}
+
+if(userData === null)
+{
+    alert("please create an account")
+}
+else if(userData.email===data.email && userData.password===data.password)
+{
+    alert("signin successful")
+
+    localStorage.setItem("signin",JSON.stringify(userData))
+
+}
+else{
+    alert("user does not exist")
+}
+    })
+
+</script>
