@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM SUBMIT BASIC DOM</title>
+</head>
+<body>
+    <input id="nam" type="text" placeholder="enter name" value=""/>
+    <input id="ag" type="number" placeholder="enter age" value=""/>
+    <select id="gen">
+      <option value="">gender</option>
+      <option value="male">M</option>
+      <option value="female">F</option>
+    </select>
+    <input id="mail" type="text" placeholder="enter Email" value=""/>
+    <input id="no" type="number" placeholder="enter phone no" value=""/>
+    <button>submit</button>
+</body>
+</html>
+
+<script>
+
+document.querySelector("button").addEventListener("click",getinfo)
+function getinfo()
+{
+    var getname = document.querySelector("#nam").value
+    var getage = document.querySelector("#ag").value
+    var getgen = document.querySelector("#gen").value
+    var getmail= document.querySelector("#mail").value
+    var getno = document.querySelector("#no").value
+
+    console.log(getname,getage,getgen,getmail,getno)
+}
+
+
+</script>
