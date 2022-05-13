@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Practise Selectors</title>
+    </head>
+    <body>
+        <h1>First H1</h1>
+        <h1>Second H1</h1>
+        <h3>First H3</h3>
+        <h3>Second H3</h3>
+        <h5>First H5</h5>
+        <h5>Second H5</h5>
+        <h5>Third H5</h5>
+        <div class="green">First DIV</div>
+        <div class="red">Second DIV</div>
+        <div class="blue">Third DIV</div>
+        <p class="green">First P</p>
+        <p class="red">Second P</p>
+        <p class="blue">Third P</p>
+        <hr/>
+        <button id="btn1">Change H1</button>
+        <button id="btn2">Change H3</button>
+        <button id="btn3">Change H5</button>
+        <button id="btn4">Change Green</button>
+        <button id="btn5">Change Red</button>
+        <button id="btn6">Change Blue</button>
+        <script>
+        </script>
+    </body>
+</html>
+
+<script>
+    //   first h1 change to red
+ document.querySelector("#btn1").addEventListener("click",myfun)
+
+ function myfun()
+ {
+document.querySelector("h1").style.color="red"
+ }
+//    h3 change to green
+ document.querySelector("#btn2").addEventListener("click",myfunh3)
+
+function myfunh3()
+{
+var h3tag=document.querySelectorAll("h3")
+
+for(var i=0;i<h3tag.length;i++)
+{
+    h3tag[i].style.color="rgb(79, 218, 79)"
+}
+}
+//  h5 to blue
+document.querySelector("#btn3").addEventListener("click",myfunh5)
+
+function myfunh5()
+{
+var h5tag=document.querySelectorAll("h5")
+
+for(var i=0;i<h5tag.length;i++)
+{
+    h5tag[i].style.color="blue"
+}
+}
+
+// class green
+document.querySelector("#btn4").addEventListener("click",greenclass)
+
+function greenclass()
+{
+var Gclass=document.querySelectorAll(".green")
+
+for(var i=0;i<Gclass.length;i++)
+{
+    Gclass[i].style.color="rgb(79, 218, 79)"
+}
+}
+
+// class red
+document.querySelector("#btn5").addEventListener("click",redclass)
+
+function redclass()
+{
+var Rclass=document.querySelectorAll(".red")
+
+for(var i=0;i<Rclass.length;i++)
+{
+    Rclass[i].style.color="red"
+}
+}
+
+
+// class blue
+document.querySelector("#btn6").addEventListener("click",blueclass)
+
+function blueclass()
+{
+var Bclass=document.querySelectorAll(".blue")
+
+for(var i=0;i<Bclass.length;i++)
+{
+    Bclass[i].style.color="blue"
+}
+}
+</script>
