@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pricing layout</title>
+    <style>
+         #heading{
+             /* border: 1px solid black; */
+             /* width: 30%;
+             height: 200px; */
+             margin: auto;
+             text-align: center;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         }
+         #heading>p{
+             color: gray;
+             line-height: 20px;
+             margin-top: -20px;
+
+         }
+         #card-section{
+             /* border: 1px solid black; */
+             width: 70%;
+             height: 350px;
+             margin:auto ;
+             margin-top: 70px;
+             display: flex;
+         }
+         #card-section>div{
+             /* border: 1px solid teal; */
+             height: 100%;
+             width: 30%;
+             margin: auto;
+             text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; ;
+         }
+
+         /* #card-section>div h1 
+
+         h2+h1 */
+         #card-section>div:nth-child(1)>h1{
+           color: rgb(69, 168, 69);
+         }
+         #card-section>div:nth-child(2)>h1{
+           color: rgb(211, 144, 20);
+         }
+         #card-section>div:nth-child(3)>h1{
+           color: rgb(68, 155, 206);
+         }
+
+         /* h2+h1+p  */
+         #card-section>div>h1+p {
+         font-style: italic;
+         color: grey;
+         font-size: 12px;
+         margin-top: -20px;
+         }
+         #card-section>div>p+p{
+             color: gray;
+         }
+         button{
+             border: 1px solid rgb(0, 0, 255);
+             background-color: white;
+             color:rgb(0, 0, 255) ;
+             border-radius: 10px;
+             padding: 10px 30px 10px 30px;
+             margin-top: 20px;
+            font-weight: bold;
+         }
+         button:hover{
+             color: white;
+             background-color:rgb(0, 0, 255) ;
+         }
+    </style>
+</head>
+<body>
+    <!-- heading  -->
+    <div id="heading">
+      <h1>Choose a plan that right for<br> your business</h1>
+      <P>we collect reviews from our users so you can get an honest opinion of what an<br> experience with our website are really like!
+      </P>
+    </div>
+    <!-- card section  -->
+   <div id="card-section">
+    <div>
+        <h2>Starter Plan</h2>
+        <h1>Free</h1>
+        <p>Per month</p>
+        <P>we collect reviews from our users<br> so you can get an honest<br> opinion of what an experience<br> with our website</P>
+    <button>Start Now</button>
+    </div>
+    <div>
+        <h2>business Plan</h2>
+        <h1>$39.00</h1>
+        <p>Per month</p>
+        <P>we collect reviews from our users<br> so you can get an honest<br> opinion of what an experience<br> with our website</P>
+    <button>Start Now</button>
+    </div>
+    <div>
+        <h2>Premium Plan</h2>
+        <h1>$59.00</h1>
+        <p>Per month</p>
+        <P>we collect reviews from our users<br> so you can get an honest<br> opinion of what an experience<br> with our website</P>
+    <button>Start Now</button>
+    </div>
+   </div>
+    
+</body>
+</html>
